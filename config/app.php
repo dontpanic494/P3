@@ -39,7 +39,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://p3.johnlincoln.me'),
+    'url' => env('APP_URL', 'p3.johnlincoln.me'),
 
     /*
     |--------------------------------------------------------------------------
