@@ -14,3 +14,15 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+//Route::get('/loremipsum', function () {
+//    return view('welcome');
+//});
+
+// Route::get('/randomuser', function () {
+//     return view('welcome');
+// });
+
+// Route::get('/passwordgenerator', function () {
+//     return view('welcome');
+// });
