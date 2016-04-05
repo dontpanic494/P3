@@ -48,9 +48,9 @@
         </div>
         <div class="collapse navbar-collapse" id="devNavBar">
           <ul class="nav navbar-nav">
-            <li><a href="/loremipsum">Lorem Ipsum Generator</a></li>
-            <li><a href="/randomuser">Random User Generator</a></li>
-            <li><a href="/passwordgenerator">xkcd Password Generator</a></li>
+            <li {{ (Request::is('loremipsum') ? 'class=active' : '') }}><a href="/loremipsum">Lorem Ipsum Generator</a></li>
+            <li {{ (Request::is('randomuser') ? 'class=active' : '') }}><a href="/randomuser">Random User Generator</a></li>
+            <li {{ (Request::is('passwordgenerator') ? 'class=active' : '') }}><a href="/passwordgenerator">xkcd Password Generator</a></li>
           </ul>
         </div>
       </div>
