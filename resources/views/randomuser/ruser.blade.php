@@ -21,13 +21,14 @@
 		<button type='submit' class='btn btn-danger submitbutton'>Generate!</button>
 		</div>
 	</form>
+	<a class='linkypoo' href="/">Take me home...</a>
 	<div>
 	@if (isset($userArray))
 		@foreach ($userArray as $user)
- 			<p>{{$user['name'] or ''}}</p>
+ 			<p><b>{{$user['name'] or ''}}</b></p>
  			<p>{{$user['date'] or ''}}</p>
  			<p>{{$user['location'] or ''}}</p>
- 			<p>{{$user['profile'] or ''}}</p>
+ 			<p><i>{{$user['profile'] or ''}}</i></p>
  			<br>
 		@endforeach
 	@endif

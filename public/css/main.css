@@ -13,3 +13,21 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.error{
+	color: red;
+	font-style: italic;
+}
+
+.generated-password {
+	display: inline;
+	background-color: #e6e6e6;
+	color: #E84A5F;
+	font-family: "Courier New";
+	font-size: 3em;
+}
+
+.linkypoo{
+	color: #C23B22;
+	font-style: italic;	
+}

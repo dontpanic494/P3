@@ -18,6 +18,7 @@
 		<div class='row container'>
 			<button type='submit' class='btn btn-danger submitbutton'>Generate!</button>
 		</div>
+		<a class='linkypoo' href="/">Take me home...</a>
 	</form>
 	<div class="row container">
 	@if(isset($paragraphs))
