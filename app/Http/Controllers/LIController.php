@@ -14,9 +14,7 @@ class LIController extends Controller {
         $number = $request->input('numPara');
         $generator = new Generator();
         $paragraphs = $generator->getParagraphs($number);
-        echo implode('<p>', $paragraphs);
-        return view('loremipsum.lorem');
-        //return view('loremipsum.lorem', ['paragraphs' => $paragraphs]);
+        return view('loremipsum.lorem', ['paragraphs' => $paragraphs]);
     }
 
 }

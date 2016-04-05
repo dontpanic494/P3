@@ -20,4 +20,10 @@
 		
 		<button type='submit' class='btn btn-danger'>Generate!</button>
 	</form>
+
+	@if(isset($paragraphs))
+		@foreach($paragraphs as $paragraph)
+			<p>{{$paragraph or ''}}</p>
+		@endforeach
+	@endif
 @stop

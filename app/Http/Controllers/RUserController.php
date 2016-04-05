@@ -12,18 +12,23 @@ class RUserController extends Controller {
 
     public function postForm(Request $request){
         $number = $request->input('numUser');
+        $birthday = $request->input('addBirthday');
+        $profile = $request->input('addProfile');
         $faker = FakerFactory::create();
+        $userArray = [];
         for($x=0; $x<$number; $x++){
-            echo $faker->name;
-            echo '<br>';
-            echo $faker->dateTimeThisCentury->format('Y-m-d');
-            echo '<br>';
-            echo $faker->text;
-            echo '<br>';
-
-            echo '<br>';
+            $userArray[$x] = [
+                'name' => $faker->name,
+            ];
+            if($birthday){
+                $userArray[$x]['date'] = $faker->dateTimeThisCentury->format('Y-m-d');
+            }
+            if($profile){
+                $userArray[$x]['profile'] = $faker->text;
+            }
         }
-        return view('randomuser.ruser');
+        echo $birthday;
+        return view('randomuser.ruser', ['userArray' => $userArray]);
     }
 
 }
