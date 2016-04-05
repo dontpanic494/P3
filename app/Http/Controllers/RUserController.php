@@ -13,6 +13,7 @@ class RUserController extends Controller {
     public function postForm(Request $request){
         $number = $request->input('numUser');
         $birthday = $request->input('addBirthday');
+        $location = $request->input('addLocation');
         $profile = $request->input('addProfile');
         $faker = FakerFactory::create();
         $userArray = [];
@@ -22,6 +23,9 @@ class RUserController extends Controller {
             ];
             if($birthday){
                 $userArray[$x]['date'] = $faker->dateTimeThisCentury->format('Y-m-d');
+            }
+            if($location){
+                $userArray[$x]['location'] = $faker->city;
             }
             if($profile){
                 $userArray[$x]['profile'] = $faker->text;

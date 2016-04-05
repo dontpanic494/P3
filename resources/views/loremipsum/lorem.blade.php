@@ -1,29 +1,30 @@
 @extends('layouts.master')
 
 @section('content')
-    <h1>LI Generator</h1>
+<div class='container'>
+
+    <h1>Lorem Ipsum Generator</h1>
 
 	<form method='POST' action='/loremipsum'>
 
 		{{ csrf_field() }}
 
-		<div class='form-group'>
+		<div class='form-group row container'>
 			<label>Number of Paragraphs</label>
-			<input
-			type='text'
-			id='numPara'
-			name='numPara'
-			value='5'
-			>
+			<input type='text' id='num-word-input' name='numPara' value='5' maxlength=2>
+			<span> (max. 99) </span>
 
 		</div>
-		
-		<button type='submit' class='btn btn-danger'>Generate!</button>
+		<div class='row container'>
+			<button type='submit' class='btn btn-danger submitbutton'>Generate!</button>
+		</div>
 	</form>
-
+	<div class="row container">
 	@if(isset($paragraphs))
 		@foreach($paragraphs as $paragraph)
 			<p>{{$paragraph or ''}}</p>
 		@endforeach
 	@endif
+	</div>
+</div>
 @stop
