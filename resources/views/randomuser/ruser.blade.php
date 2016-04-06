@@ -21,9 +21,9 @@
 		<button type='submit' class='btn btn-danger submitbutton'>Generate!</button>
 		
 		@if(count($errors) > 0)
-				@foreach ($errors->all() as $error)
-					<p class='error'>{{$error}}</p>
-				@endforeach
+			@foreach ($errors->all() as $error)
+				<p class='error'>{{$error}}</p>
+			@endforeach
 		@endif
 
 		</div>

@@ -13,7 +13,6 @@
 			<label># of Paragraphs</label>
 			<input type='text' id='num-word-input' name='numPara' value='5' maxlength=2>
 			<span> (max. 99) </span>
-
 		</div>
 		<div class='row container'>
 			<button type='submit' class='btn btn-danger submitbutton'>Generate!</button>
@@ -28,11 +27,13 @@
 		<a class='linkypoo' href="/">Take me home...</a>
 	</form>
 	<div class="row container">
+
 	@if(isset($paragraphs))
 		@foreach($paragraphs as $paragraph)
 			<p>{{$paragraph or ''}}</p>
 		@endforeach
 	@endif
+	
 	</div>
 </div>
 @stop
