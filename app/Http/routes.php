@@ -30,3 +30,5 @@ Route::post('/randomuser', 'RUserController@postForm');
 Route::get('/passwordgenerator', function () {
     return view('passwordgenerator.password');
 });
+
+Route::post('/passwordgenerator', 'PWGeneratorController@postForm');

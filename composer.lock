@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "fbfb7148f3a2a975b8712506f84e7ec1",
-    "content-hash": "108af7704b1d5aa1040d2c5b9e7aac79",
+    "hash": "d3d081433063a1181d2b0e38d2213f4f",
+    "content-hash": "3ad00f35cef1a0ccf7a0ae81461b3443",
     "packages": [
         {
             "name": "badcow/lorem-ipsum",
@@ -309,6 +309,46 @@
                 "fixtures"
             ],
             "time": "2015-05-29 06:29:14"
+        },
+        {
+            "name": "hackzilla/password-generator",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hackzilla/password-generator.git",
+                "reference": "35f338d209b767192fc3e5c33bdae0ca15cd9633"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hackzilla/password-generator/zipball/35f338d209b767192fc3e5c33bdae0ca15cd9633",
+                "reference": "35f338d209b767192fc3e5c33bdae0ca15cd9633",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "satooshi/php-coveralls": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Hackzilla\\PasswordGenerator\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Platt",
+                    "email": "github@ofdan.co.uk",
+                    "homepage": "http://www.hackzilla.org"
+                }
+            ],
+            "description": "Password Generator Library",
+            "time": "2015-07-16 22:30:35"
         },
         {
             "name": "jakub-onderka/php-console-color",

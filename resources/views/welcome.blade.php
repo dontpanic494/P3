@@ -19,7 +19,9 @@
 			Faker package. <a class='linkypoo' href="/randomuser">Check it out here!</a>
 		</p>
 		<p>
-			Sadly, the xkcd password generator is not yet functional, but it will be soon!
+			Lastly, we have the xkcd password generator. This will generate a SUPER secure password for you up
+			to 9 words long, and with optional special character/number tacked on. 
+			<a class='linkypoo' href="/passwordgenerator">Check it out here!</a>
 		</p>
 	</div>
 @stop

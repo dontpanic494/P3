@@ -14,7 +14,7 @@ class RUserController extends Controller {
 
         $this->validate($request, [
             'numUser' => 'required|min:1|numeric',
-            ]);
+        ]);
 
         $number = $request->input('numUser');
         $birthday = $request->input('addBirthday');
@@ -36,7 +36,6 @@ class RUserController extends Controller {
                 $userArray[$x]['profile'] = $faker->text;
             }
         }
-        echo $birthday;
         return view('randomuser.ruser', ['userArray' => $userArray]);
     }
 

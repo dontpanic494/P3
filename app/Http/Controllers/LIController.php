@@ -14,7 +14,7 @@ class LIController extends Controller {
 
     	$this->validate($request, [
     		'numPara' => 'required|min:1|numeric',
-    		]);
+    	]);
 
         $number = $request->input('numPara');
         $generator = new Generator();
