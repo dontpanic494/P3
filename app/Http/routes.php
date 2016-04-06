@@ -10,25 +10,23 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-Route::group(['middleware' => ['web']], function(){
 
-	Route::get('/', function () {
-	    return view('welcome');
-	});
+Route::get('/', function () {
+    return view('welcome');
+});
 
-	Route::get('/loremipsum', function () {
-	    return view('loremipsum.lorem');
-	});
+Route::get('/loremipsum', function () {
+    return view('loremipsum.lorem');
+});
 
-	Route::post('/loremipsum', 'LIController@postForm');
+Route::post('/loremipsum', 'LIController@postForm');
 
-	Route::get('/randomuser', function () {
-	    return view('randomuser.ruser');
-	});
+Route::get('/randomuser', function () {
+    return view('randomuser.ruser');
+});
 
-	Route::post('/randomuser', 'RUserController@postForm');
+Route::post('/randomuser', 'RUserController@postForm');
 
-	Route::get('/passwordgenerator', function () {
-	    return view('passwordgenerator.password');
-	});
+Route::get('/passwordgenerator', function () {
+    return view('passwordgenerator.password');
 });

@@ -18,6 +18,13 @@
 		<div class='row container'>
 			<button type='submit' class='btn btn-danger submitbutton'>Generate!</button>
 		</div>
+
+		@if(count($errors) > 0)
+				@foreach ($errors->all() as $error)
+					<p class='error'>{{$error}}</p>
+				@endforeach
+		@endif
+		
 		<a class='linkypoo' href="/">Take me home...</a>
 	</form>
 	<div class="row container">

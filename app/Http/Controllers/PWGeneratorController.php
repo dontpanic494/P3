@@ -1,36 +1,21 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace DevsBestFriend\Http\Controllers;
 
-use App\Http\Controllers\Controller;
+use DevsBestFriend\Http\Controllers\Controller;
 
-class BookController extends Controller {
+use Illuminate\Http\Request;
 
-    /**
-    * Responds to requests to GET /books
-    */
-    public function getIndex() {
-        return 'List all the books';
-    }
+class PWGeneratorController extends Controller {
 
-    /**
-     * Responds to requests to GET /books/show/{id}
-     */
-    public function getShow($id) {
-        return 'Show book: '.$id;
-    }
 
-    /**
-     * Responds to requests to GET /books/create
-     */
-    public function getCreate() {
-        return 'Form to create a new book';
-    }
+    public function postPassword(Request $request) {
+        $count = $request->input('word_count');
+        $addNum = $request->input('add_num');
+        $addSpe = $request->input('add_spe');
+        for($x=0; $x<$count; $x++){
+            //I BOOKMAKED A PACKAGE FOR THIS
 
-    /**
-     * Responds to requests to POST /books/create
-     */
-    public function postCreate() {
-        return 'Process adding new book';
+        }    
     }
 }

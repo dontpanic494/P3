@@ -11,6 +11,11 @@ use Faker\Factory as FakerFactory;
 class RUserController extends Controller {
 
     public function postForm(Request $request){
+
+        $this->validate($request, [
+            'numUser' => 'required|min:1|numeric',
+            ]);
+
         $number = $request->input('numUser');
         $birthday = $request->input('addBirthday');
         $location = $request->input('addLocation');
