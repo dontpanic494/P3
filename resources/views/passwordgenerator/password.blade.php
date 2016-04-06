@@ -3,16 +3,16 @@
 @section('content')
 	<div class='row container'>
 	    <h1>xkcd Password Generator</h1>
-	    <p>This tool generates an xkcd stype Password. Configure the settings below and then Generate!</p>
+	    <p>This tool generates an xkcd style Password. Configure the settings below and then Generate!</p>
 	</div>
 	<div class='row container'>
 		<form method='POST' action='/passwordgenerator'>
 			
 			{{ csrf_field() }}
 
-			<label>
-			<input type='text' maxlength=1 id="num-word-input" class='form-control' name='word_count' value='4'>Number of Words (1-9)
-			</label>
+			<label># of Words</label>
+			<input type='text' maxlength=1 id="num-word-input" name='word_count' value='4'>
+			<span>(max. 9)</span>
 			<br>
   			<input type='checkbox' name='add_num' value='true'> <span>Add Number</span>
 			<br>
@@ -27,6 +27,9 @@
 			@endif
 
 		</form>
+		<div class='container'>
+	    	<a class='linkypoo' href="/">Take me home...</a>
+		</div>
 		<div>
 			@if(isset($password))
 				<p class='generated-password'>
@@ -36,9 +39,6 @@
 				</p>
 			@endif
 
-		</div>
-		<div class='container'>
-	    	<a class='linkypoo' href="/">Take me home...</a>
 		</div>
 		<br>
 		<p>The theory behind the tech:</p>

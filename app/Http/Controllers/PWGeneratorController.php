@@ -26,7 +26,7 @@ class PWGeneratorController extends Controller {
 		$generator
 		  ->setWordList('/usr/share/dict/words')
 		  ->setWordCount($count)
-		  ->setWordSeparator('-');
+		  ->setWordSeparator(' ');
 		$password = $generator->generatePasswords(1);
 
 		if($addNum){

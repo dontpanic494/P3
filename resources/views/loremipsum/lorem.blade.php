@@ -10,7 +10,7 @@
 		{{ csrf_field() }}
 
 		<div class='form-group row container'>
-			<label>Number of Paragraphs</label>
+			<label># of Paragraphs</label>
 			<input type='text' id='num-word-input' name='numPara' value='5' maxlength=2>
 			<span> (max. 99) </span>
 

@@ -9,7 +9,7 @@
 		</h4> 
 		<p>
 			First, a Lorem Ipsum generator which can generate
-			up to 99 paraghraphs of filler text! This generator is powered by Badcow's Lorem-Ipsum
+			up to 99 paragraphs of filler text! This generator is powered by Badcow's Lorem-Ipsum
 			package. <a class='linkypoo' href="/loremipsum">Check it out here!</a>
 		</p>
 		<p>
