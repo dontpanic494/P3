@@ -4,7 +4,7 @@
 <div class='container'>
 
     <h1>Random User Generator</h1>
-
+	<p>This tool generates random users. Configure the settings below and then Generate!</p>
 	<form method='POST' action='/randomuser'>
 
 		{{ csrf_field() }}

@@ -3,6 +3,7 @@
 @section('content')
 	<div class='row container'>
 	    <h1>xkcd Password Generator</h1>
+	    <p>This tool generates an xkcd stype Password. Configure the settings below and then Generate!</p>
 	</div>
 	<div class='row container'>
 		<form method='POST' action='/passwordgenerator'>

@@ -4,7 +4,7 @@
 <div class='container'>
 
     <h1>Lorem Ipsum Generator</h1>
-
+	<p>This tool generates paragraphs of lorem ipsum. Configure the settings below and then Generate!</p>
 	<form method='POST' action='/loremipsum'>
 
 		{{ csrf_field() }}

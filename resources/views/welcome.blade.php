@@ -5,7 +5,7 @@
 		
 		<h1>Welcome to Dev's Best Friend!</h1>
 		<h4>
-			Here, you'll find a couple of useful tools.
+			Here, you'll find a few useful tools.
 		</h4> 
 		<p>
 			First, a Lorem Ipsum generator which can generate
